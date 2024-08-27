@@ -1,0 +1,17 @@
+.navbar{
+    background-color: rgb(135, 109, 240);
+}
+
+.d-flex{
+    margin-left: 600px;
+}
+
+.navbar-nav{
+    margin-left: 20px;
+}
+
+.nav-item{
+    font-weight: 600;
+}
+
+

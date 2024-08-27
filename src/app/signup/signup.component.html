@@ -1,0 +1,127 @@
+<div class="container-fluid mb-5 mt-5">
+  <div class="row mb-5">
+    <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5">
+      <div class="nga-card">
+        <h1 class="h5 card-header text-center py-4">
+          <i class="fas fa-solid me-4"></i><strong>Signup!</strong>
+        </h1>
+
+        <div class="card-body px-lg-5 pt-4">
+          <form [formGroup]="empForm" (ngSubmit)="onSubmit(empForm.value)">
+            <div class="form-row">
+              <div class="col">
+                <div class="md-form mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="name"
+                      class="form-control form-control-sm"
+                      formControlName="firstname"
+                      id="firstname"
+                      placeholder=""
+                    />
+
+                    <label for="floatingInput">First name</label>
+                  </div>
+                </div>
+
+                <div class="md-form mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="name"
+                      class="form-control form-control-sm"
+                      formControlName="lastname"
+                      id="lastname"
+                      placeholder=""
+                    />
+
+                    <label for="floatingInput">Last name</label>
+                  </div>
+                </div>
+                <div class="md-form mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="name"
+                      class="form-control form-control-sm"
+                      formControlName="username"
+                      id="username"
+                      placeholder=""
+                    />
+
+                    <label for="floatingInput">User name</label>
+                  </div>
+                </div>
+
+                <div class="md-form mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      class="form-control form-control-sm"
+                      formControlName="mobileno"
+                      id="mobileno"
+                      placeholder=""
+                    />
+
+                    <label for="floatingInput">Mobile Number</label>
+                  </div>
+                </div>
+
+                <div class="md-form mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      formControlName="email"
+                      id="email"
+                      placeholder=""
+                    />
+
+                    <label for="floatingInput">Email Id</label>
+                  </div>
+                </div>
+
+                <div class="md-form mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      formControlName="password"
+                      id="password"
+                      placeholder=""
+                    />
+
+                    <label for="floatingInput">Password</label>
+                  </div>
+                </div>
+
+                <div class="md-form mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="confirmPassword"
+                      class="form-control form-control-sm"
+                      formControlName="confirmPassword"
+                      id="confirmPassword"
+                      placeholder=""
+                    />
+
+                    <label for="floatingInput">Confirm Password</label>
+                  </div>
+                </div>
+
+                <button
+                  class="w-100 btn nga-btn nga-btn-primary mb-4"
+                  type="submit"
+                >
+                  Submit
+
+                  <i class="fa-solid"></i>
+                </button>
+
+                <hr />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

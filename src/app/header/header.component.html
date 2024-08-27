@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg bg-body-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://haymarketchurch.org/wp-content/uploads/2021/03/checkin-icon.png"
+        alt="Bootstrap"
+        width="60"
+        height="60"
+      />GuestMate
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutus">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactus">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button
+          *ngIf="!token"
+          type="button"
+          class="btn btn-sm btn-outline-light me-2"
+          routerLink="/signup"
+        >
+          <i class="fas fa-user-plus me-2"></i>Sign up
+        </button>
+
+        <button
+          *ngIf="!token"
+          type="button"
+          class="btn btn-sm btn-outline-light me-2"
+          routerLink="/login"
+        >
+          <i class="fas fa-sign-in-alt me-2"></i>Login
+        </button>
+        <button
+          *ngIf="token"
+          type="button"
+          class="btn btn-sm btn-outline-light me-2"
+          (click)="onLogout()"
+        >
+          <i class="fas fa-sign-in-alt me-2"></i>Logout
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

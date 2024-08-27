@@ -1,0 +1,11 @@
+.container-fluid{
+
+    padding:50px;
+
+}
+
+.form-control{
+    width: 350px;
+    border:2px solid black;
+}
+

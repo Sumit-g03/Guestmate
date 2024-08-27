@@ -1,0 +1,16 @@
+.container-fluid{
+    
+    padding:3rem 0;
+    height: 600px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lY_7jhI6POP6RIlH1y_v3jlo9EHhl2fwbg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+} 
+
+.about-content{
+    margin-top:20px;
+    margin-left: 20px;
+    color:white;
+}
