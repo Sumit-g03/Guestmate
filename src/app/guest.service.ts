@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class GuestService {
-  private apiUrl = 'http://localhost:5000/api';
+  private apiUrl = 'https://guestmate-backend.vercel.app/api';
   constructor(private http: HttpClient) {}
 
   addGuest(guest: Guest) {
